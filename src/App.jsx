@@ -8,6 +8,7 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  
   useGSAP(() => {
     gsap.from("#box", {
       opacity: 0,
@@ -19,10 +20,10 @@ function App() {
       transform: "translateX(-30%)",
       scrollTrigger: {
         trigger: ".page2",
-        scroller:"main",
+        scroller:"body",
         scrub: 3,
         markers: true,
-        start: "top 10%",
+        start: "top 0",
         end: "top -150%",
         pin: true,
       },
